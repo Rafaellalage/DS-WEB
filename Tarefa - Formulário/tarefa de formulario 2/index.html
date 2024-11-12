@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Academia</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="nome"> Nome:</label>
+        <input type ="text" name="nome" id="nome"><br>
+        <label for= "email"> Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for ="telefone" >Telefone:</label>
+        <input type="tel" name="telefone" id="telefone>
+        <label for= "data">Data de nascimento:</label>
+        <input type="date" name="dt-nasc" id="dat-nasc"><br>
+        <label for ="peso">Peso:</label>
+        <input type ="number" name="peso"id="peso"><br>
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura"id="altura"><br>
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto"><br><br>
+
+        <label> Plano:</label>
+        <input type="radio" name="plano" id=" sem">
+        <label for="sem">Semanal</label>
+        <input type="radio" name="plano" id="men">
+        <label for="men">Mensal</label>
+        <input type="radio" name="plano" id="anual">
+        <label for="anual">anual</label>
+
+        <label> Dias da semana:</label>
+        <input type="checkbox" name="segunda" id="seg">
+        <label for ="seg">Segunda-feira</label>
+        <input type="checkbox" name="terça" id="ter">
+        <label for ="ter">Terça-feira</label>
+        <input type="checkbox" name="quarta" id="qua">
+        <label for ="qua"> Quarta-feira</label>
+        <input type="checkbox" name="quinta" id="qui">
+        <label for="qui"> Quinta-feira</label>
+        <input type="checkbox" name="sexta"id="sex">
+        <label> Sexta-feira</label><br><br>
+       
+
+        <label>Objetivo principal do treino:</label>
+        <select name="objetivo">
+            <option value="">Selecione </option>
+            <option value="massa-muscular"> Ganho de massa muscular</option>
+            <option value="cardiovascular">Melhoria da saúde cardiovascular</option>
+            <option value="flexibilidade"> Aumento da flexibilidade</option>
+            <option value="mental"> Melhoria da saúde mental </option>
+            <option value="outro"> outro </option>
+        </select>
+        <br>
+        <label> Informações adicionais:</label>
+        <textarea name= "informações" rows="8" cols="54" maxlenght="5"></textarea>
+        <br>
+        <input type="submit" name="enviar" value="ENVIAR">
+
+        <input type="reset" name="resetar">
+
+        <button type="button"> Clique aqui</button>
+
+
+
+
+
+
+    </form>
+</body>
+</html>

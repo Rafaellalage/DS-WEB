@@ -1,0 +1,26 @@
+label, input, select, textarea{
+    display:block ;
+    width:95%;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+form{
+    width: 550px;
+    margin:auto;
+    background:#fc51cc;
+    padding: 40px;
+}
+label{
+    padding:0;
+    margin:0;
+    width:100%
+}
+.emlinha{
+    display:inline;
+    width:4%;
+}
+.medidas{
+    display: inline;
+    width:50%
+}
