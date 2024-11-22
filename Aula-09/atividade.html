@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade de animação</title>
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(45deg, #f6a0ff, #f21dfd, #61007f);
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+    .box {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      background: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+
+
+    /* Escala */
+    .scale:hover {
+      transform: scale(1.5);
+    }
+    /* Rotação */
+    .rotate:hover {
+      transform: rotate(360deg);
+    }
+    /* Translação */
+    .translate:hover {
+      transform: translate(50px, 50px);
+    }
+    /* Border-radius */
+    .border-radius:hover {
+      border-radius: 50%;
+    }
+    /* Opacidade */
+    .opacity:hover {
+      opacity: 0.2;
+    }
+    /* Transformação  */
+    .combined:hover {
+      transform: rotate(45deg) scale(1.2);
+      border-radius: 25%;
+    }
+    /* Define os passos da animação */
+    @keyframes moverEfeito {
+    0% {
+    transform: translateX(0);
+    background-color: red;
+    }
+    50% {
+    transform: translateX(200px);
+    background-color: rgb(0, 255, 13);
+    }
+    100% {
+    transform: translateX(0);
+    background-color: rgb(13, 0, 128);
+    }
+    }
+    /* Aplica a animação ao elemento */
+    .animado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: moverEfeito 4s ease-in-out infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box scale">transform: scale()</div>
+    <div class="box rotate">transform: rotate()</div>
+    <div class="box translate">transform: translate()</div>
+    <div class="box border-radius">border-radius:</div>
+    <div class="box opacity">opacity:</div>
+    <div class="animado">Css-animations</div>
+    </body>
+   
+  </div>
+</body>
+</html>
