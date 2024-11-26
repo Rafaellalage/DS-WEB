@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+
+  <style>
+    /*exemplo de Hover*/
+     .button-hover:hover{ 
+        background-color: lightgreen;
+        width: 100px;
+        height:100px;
+    }
+
+    /*Exemplo de Active*/
+    .button-active:active{
+        transform: scale(0.95);
+    }
+
+    /*Exemplo de focus*/
+    .input-focus:focus{
+        color: lightsalmon;
+        background-color: lightseagreen
+    }
+
+    /*Exemplo de Checked*/
+    .radio-checked:checked{
+        transform:scale(1.5);
+    } 
+    .checkbox-checked:checked{
+        transform:scale(1.5);
+    }
+    /* Exemplo de pseudoclasse para links*/
+    a:link{
+        color: chocolate;
+    }
+    a:visited{
+        color: lightpink;
+    }
+    .div-vazia{
+        height:100px;
+        width: 100px;
+        background-color: purple;
+    }
+    div:empty{
+        display:none;
+    }
+
+    
+  </style>
+</head>
+<body>
+ <div>
+    <h3> exemplo de hover</h3>
+    <button class="button-hover "> Clique aqui!</button>
+ </div>
+
+ <div>
+   <h3>Exemplo de Active</h3>
+    <button class="button-active">Clique aqui</button>
+ </div>
+
+ <div>
+    <h3> Exemplo de focus</h3>
+    <input type="text" class="input-focus" placeholder="Clique aqui">
+ </div>
+
+ <div>
+    <h3> Exemplo de Checked</h3>
+    <label> Radio button</label>
+    <input type="radio" class="radio-checked"><input type="radio" class="radio-checked">
+    <label> Checkbox</label>
+    <input type="checkbox">
+ </div>
+
+ <div>
+    <h3> Exemplo de Pseudoclasses para link</h3>
+    <a href="#"> Link 1</a>
+    <a href="#"> Link 2</a>
+    <a href="#"> Link 3</a>
+    <a href="#"> Link 4</a>
+    <a href="#"> Link 5</a>
+    <a href="#"> Link 6</a>
+    <a href="#"> Link 7</a>
+    <a href="#"> Link 8</a>
+    <a href="#"> Link 9</a>
+    <a href="#"> Link 10</a>
+ </div>
+
+ <div class="div-vazia">
+    
+ </div>
+    
+</body>
+</html>

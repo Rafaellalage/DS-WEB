@@ -1,0 +1,48 @@
+body {
+    margin: 0; /* Remove a margem padrão */
+    font-family: Arial, sans-serif;
+}
+.menu-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d00ff;
+    padding: 5px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+    gap: 2.5cm; 
+/* Define o espaçamento fixo entre os elementos */
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 2px 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #d910a7;
+    border-radius: 3px;
+}
+
+/* Mantendo o estilo original da div */
+div {
+    background-color: #8b8bf6ef;
+    width: 600px;
+    height: 600px;
+    border: 1px solid #2e2bfd;
+    text-align: center;
+    margin: auto;
+}
+    
+    
+
+    
+
+
