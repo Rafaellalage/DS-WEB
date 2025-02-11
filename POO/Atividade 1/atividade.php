@@ -1,6 +1,6 @@
 <?php
 
-Class Chuveiro{
+class Chuveiro{
 
     //Atributos
     public $Tamanho;
@@ -28,7 +28,7 @@ Class Chuveiro{
     
 }
 
-Class Piscina{
+class Piscina{
 
     //Atributos
     public $Cor;
@@ -49,7 +49,7 @@ Class Piscina{
     }
 }
 
-Class Cama{
+class Cama{
 
     //Atributos
     public $Cor;
@@ -59,24 +59,20 @@ Class Cama{
     public $Preço;
 
     //Métodos
-    public function Deitar(){
+    public function Deitar(){}
+
+    public function Pular(){}
+
+    public function Levantar(){}
     
-    }
-    public function Pular(){
+    public function Arrumar(){}
+    
+    public function Bagunça(){}
 
-    }
-    public function Levantar(){
-
-    }
-    public function Arrumar(){
-
-    }
-    public function Bagunça(){
-
-    }
+    
 }
 
-Class Ônibus{
+class Ônibus{
 
     //Atributos
     public $Cor;
@@ -129,6 +125,7 @@ Class GuardaRoupa{
     
 }
 
+?>
 
 
 
