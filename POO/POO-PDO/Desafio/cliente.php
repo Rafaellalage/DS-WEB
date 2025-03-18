@@ -17,28 +17,24 @@
     </ul>
 </div>
 
-    <div class ="container">  <!-- para criar um divisão, guardar tudo junto e facilitar o css-->
-    <hr> <!--linha embaixo-->
+        <div class="container">
+        <hr>
         <div class="formulario">
-            <form action="insertion.php" method="POST" name="formulario" onsubmit="return validarDadosClientes()">
-                <h1>FORMULÁRIO:</h1>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome">
-                <p class="erro-input" id="erro-nome"></p>
-
-
-                <label for="email">E-mail: </label>
-                <input type="text" name="email" id="email">
-                <p class="erro-input" id="erro-email"></p>
-
-
-                <label for="observacao">Observação do cliente:</label>
-                <textarea name="observacao" cols="30" rows="4" id="observacao"></textarea>
-                <p class="erro-input" id="erro-observacao"></p>
-                <br><br>
-                <input type="Submit" >
-            </form>
-        </div>
+            <form action="insertion.php" method="POST" name = "formulario">
+                <label for="nome"> Nome: </label>
+                
+                <input type ="text" name="nome" id="nome" value="<?= isset($_SESSION['erroNome'])? $_SESSION['erroNome']: "";?></p>"
+                <p class="erro-input" id = "erro-nome"><?= isset($_SESSION['erroNome'])? $_SESSION['erroNome']: "";?></p>
+                <br>
+                <label for="email"> Código:</label>
+                <input type ="type" name="codigo" id="codigo"value ="<?= isset($_SESSION['erroCodigo'])? $_SESSION['erroCodigo']: "";?></p>"
+                <p class="erro-input" id = "erro-codigo"><?= isset($_SESSION['erroCodigo'])? $_SESSION['erroCodigo']: "";?></p>
+                <br>
+                <label for="estoque">Estoque do Cliente:</label value="<?= isset($_SESSION['erroEstoque'])? $_SESSION['erroEstoque']: "";?></p>
+                <textarea name ="observacao" cols ="30" rows="4"  id="estoque"> <?= isset($_SESSION['erroEstoque'])? $_SESSION['erroEstoque']: "";?></textarea>
+                <p class="erro-input" id = "erro-estoque"></p>
+                <input type="Submit">
+</div>
 
 
 <table id="clientes">

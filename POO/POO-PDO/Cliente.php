@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,17 +26,18 @@
     <div class="container">
         <hr>
         <div class="formulario">
-            <form action="insertion.php" method="POST" name = "formulario" onsubmit="return validarDadosCliente()">
+            <form action="insertion.php" method="POST" name = "formulario">
                 <label for="nome"> Nome: </label>
-                <input type ="text" name="nome" id="nome">
-                <p class="erro-input" id = "erro-nome"></p>
+                
+                <input type ="text" name="nome" id="nome" value="<?= isset($_SESSION['erroNome'])? $_SESSION['erroNome']: "";?></p>"
+                <p class="erro-input" id = "erro-nome"><?= isset($_SESSION['erroNome'])? $_SESSION['erroNome']: "";?></p>
                 <br>
                 <label for="email"> E-mail:</label>
-                <input type ="type" name="email" id="email">
-                <p class="erro-input" id = "erro-email"></p>
+                <input type ="type" name="email" id="email"value ="<?= isset($_SESSION['erroEmail'])? $_SESSION['erroEmail']: "";?></p>"
+                <p class="erro-input" id = "erro-email"><?= isset($_SESSION['erroEmail'])? $_SESSION['erroEmail']: "";?></p>
                 <br>
-                <label for="observacao">Observação do Cliente:</label>
-                <textarea name ="observacao" cols ="30" rows="4"  id="observacao"></textarea>
+                <label for="observacao">Observação do Cliente:</label value="<?= isset($_SESSION['erroObservacao'])? $_SESSION['erroNome']: "";?></p>
+                <textarea name ="observacao" cols ="30" rows="4"  id="observacao"> <?= isset($_SESSION['erroObservacao'])? $_SESSION['erroObservacao']: "";?></textarea>
                 <p class="erro-input" id = "erro-observacao"></p>
                 <input type="Submit">
 </div>
@@ -71,11 +76,13 @@
                 </tr>
                 ";
         }
+
+
+    //Matando os dados de erro da Sessão
+    session_unset();
     ?>
-<i class="fa-solid fa-pencil"></i>
     
 </table> 
-<h3><a href="#"> Link de teste</a></h3> 
     </div>
 </body>
 <script src="./assets/js/script.js"></script>
