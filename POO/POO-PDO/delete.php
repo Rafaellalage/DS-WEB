@@ -14,5 +14,5 @@ if ($stmt-> rowCount() > 0){
     echo "Não deletou nenhuma linha";
 }
 
-header("Location: Cliente.php");
+ header("Location: Cliente.php");
 ?>
