@@ -1,0 +1,7 @@
+ db name = if0_38703260_pdo
+
+username = if0_38703260
+
+hostname = sql110.infinityfree.com
+
+password = xX9ueuXsHfh

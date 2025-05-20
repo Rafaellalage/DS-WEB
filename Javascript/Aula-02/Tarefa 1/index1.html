@@ -3,20 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Lista</title>
 </head>
 <body>
     
     <!--Questão 1-->
+    <h3>Receber o nome e exibir uma mensagem</h3>
     <p>Nome completo:</p>
     <input type="text" id="nome">
     <BR></BR>
     <button onclick="alertDeClick()">Confirmar</button>
-    <p id="result" ></p>
+    <p id="resultadonome" ></p>
 
     <!--Questão 2-->
-    <p>Numero 1:</p>
-    <input type="number" id="numero1">
+    <h3>Número ímpar ou par</h3>
+    <input type="text" id="numero" placeholder="Digite um número"><!-- Campo para o usuário digitar um número -->
+    <button onclick="verificarParImpar()">Verificar</button> <!-- Botão que chama a função de verificar par ou ímpar -->
+    <p id="resultadoimpar"></p><!-- Área onde será exibido o resultado -->
+
+    <!--Questão 3-->
+
+    <h3>Mudar para caixa alta</h3>
+    <input type="text" id="inputTexto" placeholder="Digite uma frase"> <!-- Campo para o usuário digitar uma string -->
+    <button onclick="exibirResultado()">Converter</button> <!-- Botão que chama a função para exibir o resultado -->
+    
+    <h3>Resultado:</h3>
+    <p id="resultadoCaixaAlta"></p> <!-- Área onde será exibido o resultado -->
+
+    <!--Questão 4-->
+    <h3> Valor e porcentagem</h3>
+    <input type="text" id="valor" placeholder = "Digite um numero" step="0.01">
+    <input type ="text" id ="porcentagem" placeholder = "Digite a porcentagem" step="0.01">
+    <button onclick ="exibirResultado()"> Exibir o resultado</button>
+
+    <h3> Resultado:</h3>
+    <p id="resultadoporcentagem"></p> <!--Lugar q vai exibir o resultado-->
+
+    <!--Questão 5-->
+
+
+    <!-- A div cuja cor será alterada -->
+<div id="Div">
+    Clique no botão
+
+    <!-- Botão para alterar a cor -->
+<button onclick="mudarCor()">Mudar Cor</button>
+     
+</div>
+    <style>
+        #Div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue; /* Cor inicial */
+            margin: 20px;
+            text-align: center;
+            line-height: 200px; /* Alinha o texto verticalmente */
+            font-size: 20px;
+            font-weight: bold;
+        }
+        </style>
+
+<h3>Alterar Cor da Div</h3>
+
+<br><br>
+<!--Questão 6-->
+
+<h1> Lista 2</h1>
+
+<h3>Verifique sua Idade</h3>
+    
+<br>
+    <button onclick="verificarIdade()">Verificar a minha idade</button> <!-- Botão que chama a função para verificar a idade -->
+
+
+<!--Questão 7-->
+
+<h3> Verifica o numero</h3>
+    
+    <button onclick="verificarNumero()">Verificar Número</button> <!-- Botão que chama a função para verificar o número -->
+
+
+<!--Questão 8-->
+
+<h3>Login</h3>
+    
+    
+    <button onclick="verificarLogin()">Login</button> <!-- Botão que chama a função para verificar o login -->
+
+
+<!-- Questão 9-->
+
+<h1>Calculadora Simples</h1>
+    
+    <p>Primeiro número:</p>
+    <input type="number" id="numero1" placeholder="Digite o primeiro número">
+    
+    <p>Segundo número:</p>
+    <input type="number" id="numero2" placeholder="Digite o segundo número">
+    
+    <p>Escolha a operação:</p>
+    <select id="operacao">
+        <option value="adição">Adição</option>
+        <option value="subtração">Subtração</option>
+        <option value="multiplicação">Multiplicação</option>
+        <option value="divisão">Divisão</option>
+    </select>
+    
+    <br><br>
+    <button onclick="calcular()">Calcular</button>
+
+    <h3 id="resultadocalculado"></h3>
+
+<!---Questão 10 -->
+
+<h1> Número é Par ou Ímpar</h1>
+
+    <p>Digite um número:</p>
+    <input type="text" id="numero" placeholder="Digite um número">
+    
+    <br><br>
+    <button onclick="verificarParOuImpar()">Verificar</button> <!-- Botão que chama a função para verificar o número -->
+
+    <h3 id="resultadoparouimpar"></h3> <!-- Área onde o resultado será exibido -
+
+    
+<!-Questão 11-->
+
+<h1>Classificando Triângulo</h1>
+
+    <p>Digite os três lados do triângulo:</p>
+    <input type="text" id="lado1" placeholder="Lado 1">
+    <input type="text" id="lado2" placeholder="Lado 2">
+    <input type="text" id="lado3" placeholder="Lado 3">
+
+    <br><br>
+    <button onclick="classificarTriangulo()">Verificar Triângulo</button> <!-- Botão que chama a função -->
+
+    <h3 id="resultadolados"></h3> <!-- Área onde será exibido o resultado -->
+
+
+    
+
+
      
 </body>
 <script src="script1.js"></script>
